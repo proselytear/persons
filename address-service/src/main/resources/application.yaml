@@ -1,0 +1,8 @@
+server:
+  post: ${SERVER_PORT:8080}
+spring:
+  application:
+    name: address-service
+person:
+  service:
+    url: ${PERSON_SERVICE_URL:http://localhost:8080}
