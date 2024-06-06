@@ -17,6 +17,6 @@ spec:
           image: proselyte/persons-address:latest
           env:
             - name: PERSON_SERVICE_URL
-              value: "http://person-service.default:8080"  # Используем переменную среды Kubernetes
+              value: "http://$(PERSON_SERVICE_SERVICE_HOST):8080"
             - name: SERVER_PORT
               value: '8090'
